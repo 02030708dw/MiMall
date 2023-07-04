@@ -5,6 +5,10 @@
   list-style: none;
   box-sizing: border-box;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -15,8 +19,8 @@ a:hover {
 html {
   color: #333;
   min-width: 1226px;
-  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
-    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei',
+    'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
 }
 
 /* 浮动处理 */
@@ -27,7 +31,7 @@ html {
   float: right;
 }
 .clearfix::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
